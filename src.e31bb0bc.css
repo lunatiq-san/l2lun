@@ -3,10 +3,6 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
-.page-header {
-  text-align: center;
-}
-
 .body {
   background-image: url("/1.4ec3bdde.jpg");
 }
@@ -16,6 +12,7 @@
   margin-right: auto;
   width: 1200px;
   background-color: #999;
+  background-image: url("/bg-container.c56c59fe.jpg");
 }
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */
