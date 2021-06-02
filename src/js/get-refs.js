@@ -1,5 +1,6 @@
 export default function getRefs() {
   return {
-    jsThreeMenu: document.querySelector('.js-three'),
+    menuBtn: document.querySelector('[data-menu-button]'),
+    mobileMenu: document.querySelector('[data-menu]'),
   };
 }

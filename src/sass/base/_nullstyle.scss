@@ -70,6 +70,12 @@ a:hover {
   text-decoration: none;
 }
 
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+  color: #888;
+}
+
 ul li {
   list-style: none;
 }

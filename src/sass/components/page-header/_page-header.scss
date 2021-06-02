@@ -1,4 +1,8 @@
+.page-header {
+}
+
 .page-header__container {
+  position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
 
@@ -12,11 +16,6 @@
 }
 
 .page-header__nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-
-  text-align: center;
 }
 
 .nav__item {
@@ -43,4 +42,68 @@
   @media screen and (min-width: $desktop) {
     font-size: 18px;
   }
+}
+
+.menu-container {
+  @media screen and (max-width: $mobile-max) {
+    text-align: center;
+    width: 100%;
+
+    display: none;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    border-top: 1px solid #ececec;
+
+    &.is-open {
+      display: block;
+      background-color: $primary-white-color;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+
+.menu-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 1;
+
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  color: $secondary-text-color;
+
+  &:hover {
+    // color: $accent-color;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.menu-button__icon {
+  fill: currentColor;
+}
+
+.menu-button.is-open .menu-button__icon-menu {
+  display: none;
+}
+
+.menu-button__icon-menu-close {
+  display: none;
+}
+
+.menu-button.is-open .menu-button__icon-menu-close {
+  display: block;
 }

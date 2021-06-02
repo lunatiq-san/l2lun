@@ -3,15 +3,47 @@
     <!-- <h1>l2lun - База знаний Asterios</h1> -->
 
     <!-- Путь к изображениям из HTML-фрагмента такой, как из файла index.html -->
-    <img class="logo page-header__logo" src="./images/logo/logo.webp" alt="" width="320" />
-    <div class="js-three page-header__tree-container"></div>
+    <nav class="page-header__nav nav">
+      <a href="">
+        <img
+          class="logo page-header__logo"
+          src="./images/logo/logo.webp"
+          alt="Логотип сайта"
+          width="320"
+        />
+      </a>
 
-    <ul class="page-header__nav nav">
-      <li class="nav__item"><a href="" class="nav__link">Крафт</a></li>
-      <li class="nav__item"><a href="" class="nav__link">Спойл</a></li>
-      <li class="nav__item"><a href="" class="nav__link">Рейдбоссы</a></li>
-      <li class="nav__item"><a href="" class="nav__link">Гайды по игре (текст)</a></li>
-      <li class="nav__item"><a href="" class="nav__link">Гайды по игре (видео)</a></li>
-    </ul>
+      <!-- Menu button open/close -->
+      <button
+        class="menu-button"
+        type="button"
+        aria-expanded="false"
+        aria-controls="menu-container"
+        data-menu-button
+      >
+        <svg
+          class="menu-button__icon"
+          width="40"
+          height="40"
+          aria-label="Переключатель мобильного меню"
+        >
+          <use class="menu-button__icon-menu" href="./images/icon/sprite.svg#menu"></use>
+          <use
+            class="menu-button__icon-menu-close"
+            href="./images/icon/sprite.svg#menu-close"
+          ></use>
+        </svg>
+      </button>
+      <!-- End menu button -->
+
+      <ul class="menu-container" data-menu>
+        <li class="nav__item"><a href="" class="nav__link disabled" disabled>Квесты</a></li>
+        <li class="nav__item"><a href="" class="nav__link">Классы</a></li>
+        <!-- <li class="nav__item"><a href="" class="nav__link"></a></li> -->
+        <li class="nav__item"><a href="" class="nav__link">Текстовые гайды</a></li>
+        <li class="nav__item"><a href="" class="nav__link">Видео-гайды</a></li>
+        <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
+      </ul>
+    </nav>
   </div>
 </header>
