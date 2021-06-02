@@ -1,0 +1,10 @@
+.logo {
+  @media screen and (min-width: $mobile) {
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
